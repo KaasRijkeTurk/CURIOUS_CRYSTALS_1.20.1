@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "curiouscrystals",
+	"version": "${version}",
+	"name": "Curious Crystals",
+	"description": "This is a mod, crazy right? This mod is about cool crystals and gems that you can put on gear to ENCHANT them.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/curiouscrystals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.isgoed.curiouscrystals.CuriousCrystals"
+		],
+      "client": [
+        "net.isgoed.curiouscrystals.CuriousCrystalsClient"
+      ],
+      "fabric-datagen": [
+			"net.isgoed.curiouscrystals.CuriousCrystalsDataGenerator"
+		]
+	},
+	"mixins": [
+		"curiouscrystals.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
